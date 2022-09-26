@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no-NB">
+    <head>
+        <meta charset="UFT-8"></meta>
+        <title>(Test 2) Armensk Flag</title>
+    </head>
+
+    <body>
+        <canvas id="flag" width="1200" height="800" style="border:1px solid black;"></canvas>
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML = 
+            "This is getting hard!";
+            
+            const canvas = document.getElementById("flag");
+            const ctx = canvas.getContext("2d");
+
+            function rectangle(bredde, høyde, fyllType, farge) {
+                ctx.fillStyle = farge;
+                ctx.fillRect(0, 0, bredde, høyde);
+            }
+
+            function testRectangle() {
+                rectangle(1200, 600, "solid", "orange");
+                rectangle(1200, 400, "solid", "blue");
+                rectangle(1200, 200, "solid", "red");
+            }
+            
+            testRectangle();
+        </script>
+    </body>
+</html>
