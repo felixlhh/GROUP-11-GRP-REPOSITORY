@@ -6,12 +6,12 @@
     </head>
 
     <body>
-        <canvas id="flag" width="1200" height="800" style="border:1px solid black;"></canvas>
+        <canvas id="flag" width="300" height="200" style="border:1px solid black;"></canvas>
         <p id="demo"></p>
 
         <script>
             document.getElementById("demo").innerHTML = 
-            "This is getting hard!";
+            "Botez my friends!";
             
             const canvas = document.getElementById("flag");
             const ctx = canvas.getContext("2d");
@@ -22,9 +22,9 @@
             }
 
             function testRectangle() {
-                rectangle(1200, 600, "solid", "orange");
-                rectangle(1200, 400, "solid", "blue");
-                rectangle(1200, 200, "solid", "red");
+                rectangle(300, 600, "solid", "rgb(206, 17, 38)");
+                rectangle(200, 400, "solid", "rgb(252, 209, 22)");
+                rectangle(100, 200, "solid", "rgb(0, 43, 127)");
             }
             
             testRectangle();
