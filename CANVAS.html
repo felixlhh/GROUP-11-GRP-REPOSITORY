@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="no-NB">
+    <head>
+        <meta charset="UFT-8"></meta>
+        <title>Flaget til Romania</title>
+    </head>
+
+    <body style="background-color: rgb(184, 176, 176);">
+        <div style = "text-align: center;">
+        <a href="https://en.wikipedia.org/wiki/Romania" target = "_blank">
+            <canvas id="flag" width="600" height="400" style="border:1px solid black;"></canvas>
+        </a>
+        <p id="demo"></p>
+        </div>
+
+        <script>
+            document.getElementById("demo").innerHTML = 
+            "Klikk på flaget for å lese mer Romania.";
+            
+            const canvas = document.getElementById("flag");
+            const ctx = canvas.getContext("2d");
+
+            function rectangle(bredde, høyde, fyllType, farge) {
+                ctx.fillStyle = farge;
+                ctx.fillRect(0, 0, bredde, høyde);
+            }
+
+            function testRectangle() {
+                rectangle(600, 400, "solid", "rgb(206, 17, 38)");
+                rectangle(400, 400, "solid", "rgb(252, 209, 22)");
+                rectangle(200, 600, "solid", "rgb(0, 43, 127)");
+            }
+            
+            testRectangle();
+        </script>
+    </body>
+</html>
