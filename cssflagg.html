@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>CSS-flagg</title>
+    <style>
+        
+        #bground {background-color: slategray;}
+
+
+        #container {
+    width: 100%;
+    height: 100%;
+}
+
+#flagg {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border: 2px solid black;
+    width: 600px;
+    height: 400px;
+    display: inline-block;
+}
+
+.flaggdel {
+    height: 400px;
+    width: 200px;
+    margin: 0;
+    position: absolute;
+}
+
+.top {
+    background-color: green;
+}
+
+.mid {
+    right: 200px;
+    background-color: white;
+}
+
+.bottom {
+    left: 400px;
+    background-color: red;
+}
+        
+    </style>
+</head>
+<body id = "bground">
+    <div id = "container">
+        <div id = "flagg">
+            <p class = "flaggdel top"></p>
+            <p class = "flaggdel mid"></p>
+            <p class = "flaggdel bottom"></p>
+        </div>
+    </div>
+</body>
+    
+</html>
